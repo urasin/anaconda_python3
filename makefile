@@ -11,8 +11,8 @@ build:
 pip-install:
 	docker-compose run python pip install -r ./requirements.txt
 
-#E TODO: 削除系を整理したい
-#E 不要なイメージと使われていないvolumeを削除
+## TODO: 削除系を整理したい
+## 不要なイメージと使われていないvolumeを削除
 clean:
 	docker image prune
 	docker volume prune
